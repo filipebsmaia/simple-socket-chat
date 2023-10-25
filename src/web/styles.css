@@ -1,0 +1,151 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  display: flex;
+  background-color: #eee;
+  
+  flex: 1;
+  height: 100%;
+}
+
+#chat-container {
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+}
+
+#message-list {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+  height: 100%;
+
+  padding: 1rem 2rem;
+  gap: 0.125rem;
+  
+  background-color: #fff;
+  border-radius: 1rem;
+  margin: 0rem 1rem;
+
+  overflow-y: auto;
+}
+
+#message-list li {
+  position: relative;
+
+  display: flex;
+
+  align-self: flex-start;
+  padding: 0.5rem 0.5rem 1.5rem;
+  
+  border-radius: 0.25rem;
+  border-top-left-radius: 0;  
+
+  color: #101010;  
+  background-color: #e3def3;
+}
+
+#message-list li div {
+  display: flex;
+  flex-direction: column;
+}
+
+#message-list li div span {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+#message-list li div p {
+  margin-top: 0.25rem;
+}
+
+#message-list li div p img {
+  max-width: 256px;
+}
+
+#message-list li time {
+  font-size: 0.75rem;
+  align-self: flex-end;
+  padding-left: 1rem;
+  margin-bottom: -1rem;
+}
+
+#message-list li.me {
+  align-self: flex-end;
+
+  color: #fff;
+  border-top-right-radius: 0;
+  background-color: #7159c1;
+}
+
+#message-list li::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+
+  left: -1rem;
+  border-top: 1rem solid #e3def3;
+  border-left: 1rem solid transparent;
+}
+
+#message-list li.me::after {
+  left: unset;
+  right: -1rem;
+
+  border-top: 1rem solid #7159c1;
+  border-right: 1rem solid transparent;
+}
+
+
+form {
+  display: flex;
+  align-items: center;
+
+  margin: 0.25rem 1rem 0.25rem;
+  gap: 0.25rem;
+}
+
+form > * {
+  border-radius: 1rem;
+  background-color: #fff;
+  height: 3rem;
+}
+
+input {
+  width: 100%;
+  padding-left: 1rem;
+}
+
+.action-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  min-width: 3rem;
+  max-width: 3rem;
+  height: 3rem;
+}
+
+.action-button:is(button) {
+  background-color: #7159c1;
+}
+
+
+.action-button img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
