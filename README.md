@@ -43,6 +43,7 @@
 
 O projeto foi desenvolvido utilizando as seguintes tecnologias:
 
+- [JavaScript]()
 - [TypeScript](https://www.typescriptlang.org/)
 - [Node.js](https://nodejs.org/en/)
 - [Socket.io](https://socket.io/)
