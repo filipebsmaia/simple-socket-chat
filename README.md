@@ -69,6 +69,7 @@ Para clonar a aplicação você ira precisar do [Git](https://git-scm.com), [Nod
   $ pnpm dev
 
 ```
+> Para acessar a aplicação acesse o browser em: htt://localhost:3000
 
 <a id="como-contribuir"></a>
 
